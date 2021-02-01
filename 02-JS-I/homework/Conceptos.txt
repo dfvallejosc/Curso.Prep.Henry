@@ -1,0 +1,30 @@
+VARIABLES:
+Una variable es un argumento dentro de javascript al que se le asigna un nombre y un valor específicos.  Una buena analogía podría ser la lista de un supermercado, en dónde
+se muestra el nombre de un producto y su valor en dinero.  Sin embargo, hay que tener en cuenta que las variables no sólo van a tener valores numéricos, sino también alfabéticos, nulos,
+booleanos o indefinidos.
+
+STRINGS:
+Los strings son una cadena de caractéres alfanuméricos.  Ejemplo: Diego, Camilo, manzana, pera, dos, río, etc.
+Se ingresan a Javascript dentro de comillas simples o dobles:  "Diego", 'Camilo'.
+
+FUNCIONES:
+Las funciones se pueden considerar como unas cajas a las que se les ingresa un valor y se optiene un resultado.  Por ejemplo:
+pueden haber funciones a las que se les ingresa un número y entregue como resultado el cuadrado de ese número, o una función a la que se le ingrese una letra
+y entregue una palabra cualquiera que inicie con esa letra, y así con muchos otros ejemplos.
+
+DECLARACIONES:
+Alguna vez en la vida seguramente nos ha tocado tomar decisiones que están expuestas a una condición.  Por ejemplo, si consigo boletas para el cine, voy a ir a ver los Avengers de lo contrario
+voy a ir a comer algo por ahí.  O también puede ser, si hace un buen día saldré a correr, si no, me quedaré en casa viendo una película en Netflix.
+Lo mismo funciona en un algoritmo de programación, le damos una instrucción a la computadora dependiendo de una situación específica y ella tomará el camino que vea correcto.
+Por ejemplo, le puedo decir a la computadora que haga la suma de dos números si estos son pares y sino, que haga la multiplicación.
+
+VALORES BOOLEANOS
+Los valores booleanos son true y false.  Estos se conocen como el valor de verdad de una afirmación, true cuando la afirmación es verdad, false cuando es falsa.  
+
+Aquí van algunos ejemplos:
+
+2 es par: true
+9 es un número primo: false
+árbol tiene 6 letras: false
+5 es menor que 40: true. 
+
