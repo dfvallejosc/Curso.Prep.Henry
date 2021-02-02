@@ -1,0 +1,18 @@
+for:
+Un ciclo for es un bucle que repite una acción hasta que se cumple una condición determinada.  Una analogía con la vida real sería una carrera de fórmula 1.
+Un auto debe recorrer una determinada cantidad de vueltas por un circuito, es decir, repite esta acción, hasta que termina la carrera cuando cumple una determinada
+cantidad de vueltas.  El ciclo for es útil para analizar elementos dentro de un array, por ejemplo.
+
+Condicionales && (y), || (ó), ! (negación)
+Un condicional es un operador lógico que funciona muy parecido a un operador matemático pero con afirmaciones y valores de verdad de estas.  Existen algo conocido como
+tablas de verdad en dónde podemos ver el resultado de la operación de dos afirmaciones con estos operadores o simplemente recordar que:
+
+Para el operador Y, la única forma de que la afirmación compuesta sea verdad es que las dos o más afirmaciones que la componen sean verdadera.
+Para el operador O, la única forma de que la afirmación compuesta sea falsa es que las dos o más afirmaciones que la componen sean falsas.
+
+Por su parte la negación solo cambia el valor de verdad de una afirmación.  Si esta es verdadera, la vuelve falsa y viceversa.
+Ejemplo:
+
+La tierra es redonda: Verdad
+La tierra NO es redonda: falso
+
