@@ -1,0 +1,23 @@
+Array:
+
+Un array es un conjunto de elementos posicionados de una manera específica.  En un array pueden haber todo tipo
+de elementos de Javascript como números, strings, booleanos, etc e incluso otro array.  La característica de los array es que
+son mutables y que se puede hacerlo de una forma ordenada ya que estos organizan la información.
+
+De los array es importante tener en cuenta que su índice empieza a contar desde cero, que pueden almacenar todo tipo de información,
+que existen funciones predeterminadas en Javascript que permiten adicionar, quitar y contar elementos.
+
+Ejemplo de un array:
+
+var numPrimos = [2, 3, 5, 7, 11, 13, 17, 19];
+var diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+
+Si quiero obtener un elemento dentro del array lo hago de la siguiente manera:
+
+numPrimos[1];
+=3
+
+Incluso a partir del elemento que obtengo del array puedo empezar a hacer operaciones.
+
+numPrimos[1] + 4; 
+= 7
