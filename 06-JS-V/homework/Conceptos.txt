@@ -1,0 +1,122 @@
+CLASES
+
+Es una plantilla para la creación de objetos.  Una clase agrupa objetos con características similares.
+
+Por ejmplo: Una ballena, un león, un ser humano, todos son mamíferos.
+
+Ejemplo
+
+Alumno {
+	nombre,
+	apellido,
+	edad,
+	direccion,
+	email
+	}
+
+Entonces, un alumno sería un objeto que comparte estos valores.
+
+Juan {
+	nombre: 'Juan',
+	apellido: 'Sereno',
+	edad: 28,
+	direccion: 'Chacabuco 1743',
+	email: 'jsereno@gmail.com'
+	}
+
+Diego {
+	nombre: 'Diego'
+	apellido: 'Vallejos'
+	edad: 28,
+	direccion: 'Suipacha 3367',
+	email: 'dfvallejosc@gmail.com'
+	}
+
+Miremos que tuvimos que escribir el objeto Juan y el objeto Diego, cada uno, pero estos tienen las mismas propiedades.  De hecho, 
+tienen las mismas propiedades que el objeto Alumno. ¿No sería más fácil entonces no tener que repetir la escritura de cada objeto
+y crear algo parecido a una función que lo cree sin necesidad de repqtir todo?  Eso es una clase, una plantilla para poder crear
+objetos que comparten propiedades.
+
+FUNCTION CONSTRUCTORS Y "NEW"
+
+Una fuction constructor es como una fábrica a la que le ingresas materia prima y sale con un producto deseado. 
+
+Nota: Toda función constructora de clases, empiezan con mayúscula.
+
+function Persona() {
+	this.firstName = 'Juan';
+	this.lastName = 'Perez
+}
+
+var Juan = New Persona(); 
+Resulta en esto
+Juan
+Persona {firstName: "Juan", lastName: "Perez"}
+
+Hay que tener en cuenta que cuando se crea Juan, este objeto queda con la marca de la función constructora con la que se creó.
+
+Ejemplo:
+
+function Car(marca, cv, color) {
+	this.marca=marca;
+	this.cv=cv;
+	this.color=color;
+}
+
+var pichirilo = new Car('Suzuki',1000,'Gris')
+
+Resulta en:
+
+pichirilo
+Car {marca: "Suzuki", cv: 1000, color: "Gris"}
+
+Default operator 
+
+function Car(marca, cv, color) {
+	this.marca=marca || 'Audi';
+	this.cv=cv || 2000;
+	this.color=color || "Negro";
+}
+
+En caso que no le pase argumentos a la función, esta tomará unos valores que se asignan por defecto.
+
+PROTOTYPE
+El prototipo es una función interna que tiene un objeto por defecto.  Como en javascript la mayoría de sus elementos son objetos, se puede 
+considerar que esa función es la que trae por defecto javascript, por ejemplo: para los array, array.length, array.push(), array.split(), etc.
+length, push y split serían prototipos de un objeto llamado array.
+
+Por ejemplo:
+
+Digamos que tenemos un estudiante de algún colegio y queremos calcular el promedio de sus notas al final de año
+
+function Estudiante(periodo1, periodo2, periodo3, periodo4) {
+	this.periodo1=periodo1;
+	this.periodo2=periodo2;
+	this.periodo3=periodo3;
+	this.periodo4=periodo4;
+}
+
+Creemos un nuevo estudiante:
+
+var Diego = new Estudiante(4.5, 4.3, 3.9, 5.0)
+
+Ahora, creemos un prototipo (función) para calcular su promedio:
+
+Estudiante.prototype.calGPA = function() {
+	var GPA = (this.periodo1 + this.periodo2 + this.periodo3 + this.periodo4)/4;	
+	return GPA
+}
+
+De esta manera, al hacer Diego.calGPA() Javascript nos calculará el promedio del estudiante Diego.
+
+
+
+
+
+
+
+
+
+
+
+
