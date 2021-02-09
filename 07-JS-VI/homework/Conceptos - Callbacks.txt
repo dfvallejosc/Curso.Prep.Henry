@@ -1,0 +1,97 @@
+CALLBACK
+
+Es una función que es un argumento de otra función.
+
+Ejemplo:
+
+function decirHolaAlUsuario(usuario) {
+	return 'Hola ' + usuario + '!';
+}
+
+function decirAdiosAlUsuario(usuario) {
+	return 'Adiós ' + usuario + '!';	
+}
+
+function crearSaludo(usuario, cb) {
+	return cb(usuario);
+}
+
+Para llamar al callback:
+
+crearSaludo('Diego', decirAdiosAlUsuario)
+Devuelve: "Adiós Diego!"
+
+Es importante que en el argumento de la función el callback no se invoque, es decir, como argumento 
+se escribe nombreFuncion y no nombreFuncion().  La segunda resultará en un error.
+
+ARRAYS
+
+.FOREACH
+
+arr.forEach(function callback(currentValue, index (optional), array (optional))){//your iterator}
+
+Ejemplo:
+
+var students = ['Diego', 'Juan', 'Laura', 'Gustavo']
+
+Supongamos que queremos mostrar los estudiantes de un curso que se encuentran dentro de un array.  
+Intuitivamente, y sin usar callbacks, esto lo programaríamos de la siguiente manera:
+
+for (var i=0;i<students.length; i++) {
+	console.log(students[i]);
+} 
+
+Esto haría el console.log de cada estudiante.  Sin embargo, si queremos hacerlo mediante callback usando
+la funcion predeterminada .forEach:
+
+students.forEach(function(elemento, indice) {
+	console.log(elemento);
+})
+
+.MAP()
+
+Veámos esto mediante un ejemplo:
+
+var numbers = [1,2,3,4,5];
+
+var doubles = numbers.map(function(x) {
+	return x*2;
+});
+
+Devolverá:
+[2, 4, 6, 8, 10]
+
+.REDUCE
+
+Actúa como función reductora sobre cada elemento de un array.  Esta función devuelve un único valor.
+
+Sintaxis
+arr.reduce(callback(acumulador, valorActual[indice[array]]))
+ 
+Ejemplo:
+
+var nums = [1,2,3,4,5,6,7,8,9,10];
+
+var sumaReduce = nums.reduce(function(acumulador, elemento) {
+	return acumulador + elemento;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
