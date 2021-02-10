@@ -1,17 +1,45 @@
+body {
+    background-image: url("https://images.pexels.com/photos/1596888/pexels-photo-1596888.jpeg?cs=srgb&dl=pexels-rodolfo-clix-1596888.jpg&fm=jpg");
+    background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+a {
+    text-align: center;
+}
 
 h1 {color: darkcyan;}
 
-img {width: 400px;}
+#firstDiv {
+    text-align: center;
+    background-color:#CCCCFF;
+    margin: 20px 80px 20px 80px;
+    padding: 10px;
+    border-radius: 0.5cm;
+}
+
+#secondDiv {
+    background-color: #E9967A;
+    margin: 20px 80px 20px 80px;
+    border-radius: 0.5cm;
+    padding: 5px;
+}
+
+img {width: 1000px;
+    text-align: center;}
 
 #thirdDiv {
-    height: 600px; 
-    width: 500px; 
+    margin: 20px 80px 20px 80px;
     background-color: darkgray;
     padding: 50px; 
     border: darkolivegreen;
+    border-radius: 0.5cm;
 }
 
-#spanId {font-size: 18px; margin: 50px;}
+#spanId {
+    font-size: 18px; 
+    margin: 50px;}
 
 
     
